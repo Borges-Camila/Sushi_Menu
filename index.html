@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/output.css" />
+    <title>Sushi Restaurant</title>
+  </head>
+  <body>
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+      <div class="w-full h-full flex flex-col justify-center items-center">
+        <img
+          src="./assets/logo.png"
+          alt="logo do restaurante"
+          class="h-32 w-32 rounded-full shadow-lg hover:scale-110 duration-200"
+        />
+        <h1 class="text-3xl mt-4 mb-2 font-bold text-white">
+          Sushi Restaurant
+        </h1>
+        <span class="text-white font-medium"
+          >Rua Tokio 10, Abrantes, Santarém</span
+        >
+        <div class="bg-green-600 px-4 py-1 rounded-lg mt-1" id="date-spam">
+          <span class="text-white font-medium"
+            >Seg à Dom - 11:30 às 14:30 e 19:00 às 22:30</span
+          >
+        </div>
+      </div>
+    </header>
+
+    <h2 class="text-2xl md:text-4xl font-bold text-center mt-9 mb-6">
+      Conheça nosso Menu
+    </h2>
+
+    <div id="menu">
+      <main
+        class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16"
+      >
+        <div class="flex gap-2">
+          <img
+            src="./assets/sushi-1.jpg"
+            alt="combo sushi 1"
+            class="h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+          <div>
+            <p class="font-bold">Combo 1</p>
+            <p class="text-sm">32 peças de califórnia salmão frito</p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">22€</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Combo 1"
+                data-price="22"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img
+            src="./assets/sushi-2.jpg"
+            alt="combo sushi 2"
+            class="h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+          <div>
+            <p class="font-bold">Combo 2</p>
+            <p class="text-sm">40 peças dos nossos mais pedidos</p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">26€</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Combo 2"
+                data-price="26"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img
+            src="./assets/sushi-4.jpg"
+            alt="combo sushi 3"
+            class="h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+          <div>
+            <p class="font-bold">Combo 3</p>
+            <p class="text-sm">
+              16 peças mistas de nigiri (salmão, atum, peixe manteiga)
+            </p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">10€</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Combo 3"
+                data-price="10"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img
+            src="./assets/sushi-5.jpg"
+            alt="combo sushi 4"
+            class="h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+          <div>
+            <p class="font-bold">Combo 4</p>
+            <p class="text-sm">10 peças de uramaki salmão com ovas</p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">7.50€</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Combo 4"
+                data-price="7.50"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img
+            src="./assets/sushi-6.jpg"
+            alt="combo sushi 5"
+            class="h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+          <div>
+            <p class="font-bold">Combo 5</p>
+            <p class="text-sm">12 peças: 6 makis mistos e 6 niguiris mistos</p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">7.50€</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Combo 5"
+                data-price="7.50"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img
+            src="./assets/japanese-7.jpg"
+            alt="combo sushi 7"
+            class="h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+          <div>
+            <p class="font-bold">Combo 6</p>
+            <p class="text-sm">
+              30 peças: 20 sashimis mistos, 10 niguiris mistos
+            </p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">18.50€</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Combo 6"
+                data-price="18.50"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img
+            src="./assets/sushi-3.jpg"
+            alt="combo sushi 3"
+            class="h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+          <div>
+            <p class="font-bold">Combo 7: Temaki</p>
+            <p class="text-sm">
+              12 peças: 2 salmão, 2 atum, 2 peixe manteiga, 2 camarão, 4 mistos
+              fritos
+            </p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">10€</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Combo 7"
+                data-price="10"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img
+            src="./assets/japan-8.jpg"
+            alt="combo sushi 8"
+            class="h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+          <div>
+            <p class="font-bold">Combo 8</p>
+            <p class="text-sm">
+              24 peças: sashimi de salmão, atum e paixe manteiga.
+            </p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">16€</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Combo 8"
+                data-price="16"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <div class="mx-auto max-w-7xl px-2 my-2">
+        <h2 class="font-bold text-3xl">Bebidas</h2>
+      </div>
+
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16"
+        id="menu"
+      >
+        <div class="flex gap-2">
+          <img
+            src="./assets/refri1.png"
+            alt="refri 1"
+            class="h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+          <div>
+            <p class="font-bold">Coca-Cola</p>
+            <p class="text-sm">Lata 350ml</p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">0.90€</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Coca-Cola"
+                data-price="0.90"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-2">
+          <img
+            src="./assets/refri2.png"
+            alt="refri 2"
+            class="h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+          <div>
+            <p class="font-bold">Energético XX</p>
+            <p class="text-sm">Lata 480ml</p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">1.30€</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Energético XX"
+                data-price="1.30"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-2">
+          <img
+            src="./assets/refri3.png"
+            alt="refri 3"
+            class="h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+          <div>
+            <p class="font-bold">Soda Laranja</p>
+            <p class="text-sm">Lata 350ml</p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">0.85€</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Soda Laranja"
+                data-price="0.85"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-2">
+          <img
+            src="./assets/refri4.png"
+            alt="garafa suco"
+            class="h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+          <div>
+            <p class="font-bold">Limonada Siciliana</p>
+            <p class="text-sm">Garrafa 400ml</p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">1.10€</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Limonada Siciliana"
+                data-price="1.10"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+    >
+      <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+        <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+        <div id="cart-itens" class="flex justify-between mb-2 flex-col"></div>
+        <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+        <p class="font-bold">Endereço de entrega:</p>
+        <input
+          type="text"
+          placeholder="Digite seu endereço..."
+          id="adress"
+          class="w-full border-2 p-1 rounded my-1 focus:border-gray-700"
+        />
+        <p class="text-red-700 hidden" id="adress-warn">
+          Digite seu endereço completo
+        </p>
+        <div class="flex items-center justify-between mt-5 w-full">
+          <button
+            id="close-btn"
+            class="border-2 border-gray-500 px-2 rounded hover:border-red-600"
+          >
+            Fechar
+          </button>
+          <button
+            id="checkout-btn"
+            class="bg-green-500 text-white px-4 py-1 rounded hover:bg-green-700"
+          >
+            Finalizar pedido
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="w-full bg-red-600 py-3 fixed bottom-0 z-40 flex items-center justify-center"
+    >
+      <button
+        class="flex items-center gap-2 text-white font-bold"
+        id="cart-button"
+      >
+        (<span id="cart-count">0</span>) Ver meu carrinho
+        <i class="fa fa-cart-plus text-lg text-white"></i>
+      </button>
+    </footer>
+  </body>
+</html>
