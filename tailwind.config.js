@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        home: "url(/assets/trilha-fushimi-inari.jpg)",
+        home: "url('./assets/trilha-fushimi-inari.jpg')",
       },
     },
   },
